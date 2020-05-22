@@ -1,0 +1,15 @@
+Dining_Philosophers
+1. Implementation of the dining philosophers problem
+2. Solution to the dining philosophers problem using resource hiarchy
+
+
+To use with MDAT:
+- Make libmdat.a and suds and place in current directory.
+- Alter mdat and suds directories in Makefile.
+
+To test:
+./run-mdat.py -R <runs> -t <threads> -r <rounds> -m <mode (1 or 2)>
+R: number of repetition
+t: amount of threads, must be at least 2 as the dining philosopher problem requires at least 2 philosophers
+r: number of rounds (going through the cycle of picking up forks -> eat -> put down forks -> think)
+m: mode, 1 will test section1 and 2 will test section2
